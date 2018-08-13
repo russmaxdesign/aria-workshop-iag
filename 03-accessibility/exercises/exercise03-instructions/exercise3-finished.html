@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Exercise 3</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../assets/css/normalize.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Exercise 3</h1>
+    <p><a href="#">link above content</a></p>
+
+    <p>All form fields are required.</p>
+    <form action="#">
+      <div class="form-container">
+        <label class="label-wrapped" for="name">
+          <span class="label-content">Name</span>
+          <input class="input" id="name" type="text">
+          <span class="instructions">Use your full name</span>
+        </label>
+      </div>
+      <div class="form-container">
+        <label class="label-wrapped" for="email">Email</label>
+        <input class="input" id="email" type="text" aria-describedby="one">
+        <span id="one" class="instructions">Must be a valid email address</span>
+      </div>
+      <div class="form-container">
+        <button class="button">Submit</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Automatically injecting content into the page - aria-live="polite"</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../assets/css/normalize.css">
+  <link rel="stylesheet" href="../../assets/css/styles.css">
+  <link rel="stylesheet" href="../../assets/css/messages.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Demo: Automatically injecting content into the page <small>(aria-live="polite")</small></h1>
+    <p><a href="#">link above content</a></p>
+  
+    <div id="message" class="warning" aria-live="polite"></div>
+    <p>It was the best of times, it was the worst of times, it was the age 
+    of wisdom, it was the age of foolishness, it was the epoch of belief, 
+    it was the epoch of incredulity, it was the season of Light, it was 
+    the season of Darkness, it was the spring of hope, it was the winter 
+    of despair, we had everything before us, we had nothing before us, 
+    we were all going direct to Heaven, we were all going direct the 
+    other way.</p>
+    <p><a href="#">This is a link</a></p>
+    <p><a href="#">link below content</a></p>
+  </div>
+
+<script type="text/javascript">
+  (function()
+  {
+    window.setTimeout(function()
+    {
+      document.getElementById('message').innerHTML = '<p><strong>Warning:</strong> This is a warning notification.</p>';
+    }, 10000);
+  
+  })();
+</script>
+</body>
+</html>

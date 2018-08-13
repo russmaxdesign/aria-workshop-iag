@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Exercise 03</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../assets/css/normalize.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Exercise 03</h1>
+    <p><a href="#">link above content</a></p>
+
+    <ul role="tablist">
+      <li>
+        <a href="#panel1" id="tab1" role="tab" aria-controls="panel1" aria-selected="true">Apple</a></li>
+      <li>
+        <a href="#panel2" id="tab2" role="tab" aria-controls="panel2" aria-selected="false">Pears</a></li>
+      <li>
+        <a href="#panel3" id="tab3" role="tab" aria-controls="panel3" aria-selected="false">Oranges</a></li>
+    </ul>
+    <div id="panel1" role="tabpanel" aria-labelledby="tab1">
+      Panel 1
+    </div>
+    <div id="panel1" role="tabpanel" aria-labelledby="tab2">
+      Panel 2
+    </div>
+    <div id="panel1" role="tabpanel" aria-labelledby="tab3">
+      Panel 3
+    </div>
+
+    <p><a href="#">link below content</a></p>
+  </div>
+</body>
+</html>

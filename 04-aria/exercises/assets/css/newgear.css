@@ -1,0 +1,158 @@
+/* ---------------------
+base
+----------------------*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0 15px 15px;
+  color: #444;
+  background: #fff;
+  font: 1em/1.2 helvetica, arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 .3em;
+  color: #000;
+  line-height: 1.1;
+}
+
+h1 {
+  margin: 0;
+  font-weight: normal;
+}
+
+p {
+  margin: 0 0 1.5em;
+  line-height: 1.4;
+}
+
+/* ---------------------
+grid
+----------------------*/
+
+.container {
+  max-width: 55em;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 20px 0;
+}
+
+.content {
+  overflow: hidden;
+  width: 100%;
+  padding: 20px 2px;
+}
+
+.main {
+  float: left;
+  width: 60%;
+}
+
+.aside {
+  float: right;
+  width: 35%;
+  background: yellow;
+}
+
+.footer {
+  padding: 20px;
+  color: #fff;
+  background: #444;
+}
+
+.footer a:link,
+.footer a:visited {
+  color: #fff;
+}
+
+.footer__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer__list-item {
+  display: inline;
+  margin: 0 .5em 0 0;
+}
+/* ---------------------
+nav
+----------------------*/
+
+.nav__list {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: #444;
+}
+
+.nav__list-item {
+  display: inline;
+}
+
+.nav__link {
+  float: left;
+  border-right: 1px solid #fff;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+.nav__link:link,
+.nav__link:visited {
+  color: #fff;
+}
+
+.nav__link:focus,
+.nav__link:hover {
+  color: #fff;
+  background: #222;
+}
+
+.nav__link:active {
+  color: #fff;
+  background: #000;
+}
+
+/* ---------------------
+pullquote
+----------------------*/
+
+.pullquote {
+  margin: 0;
+  padding: 20px;
+  background: #ddd;
+  font-family: georgia, times, serif;
+  font-size: 1.2em;
+  font-style: italic;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.pullquote__content {
+  margin: 0;
+}
+
+/* ---------------------
+pullquote
+----------------------*/
+
+header[role='banner'],
+nav[role='navigation'],
+main[role='main'],
+div[role='region'],
+aside[role='complementary'],
+footer[role='contentinfo'] {
+  outline: 2px solid red;
+}

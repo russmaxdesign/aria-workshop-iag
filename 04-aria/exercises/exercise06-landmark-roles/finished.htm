@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Exercise 6</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../assets/css/normalize.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="../assets/css/newgear.css">
+</head>
+<body>
+<div class="container">
+  <header class="header" role="banner">
+    <h1 class="header__heading">
+      <b>New</b>Gear
+    </h1>
+  </header>
+  <nav class="nav" role="navigation">
+    <ul class="nav__list">
+      <li class="nav__list-item home"><a aria-current="page" class="nav__link nav__current" href="#">Home</a></li>
+      <li class="nav__list-item about"><a class="nav__link" href="#">About</a></li>
+      <li class="nav__list-item services"><a class="nav__link" href="#">Services</a></li>
+      <li class="nav__list-item clients"><a class="nav__link" href="#">Clients</a></li>
+      <li class="nav__list-item contact"><a class="nav__link" href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="content">
+    <main class="main" role="main">
+      <h2>Welcome to <b>New</b>Gear</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi tenetur repellat eos officia vitae iste blanditiis commodi vero illo inventore nobis, incidunt repudiandae quaerat, eveniet quos non ad laborum cupiditate!</p>
+
+      <section class="poll" role="region" aria-labelledby="pollheading">
+        <h3 id="pollheading">This week's Poll</h3>
+        <form method="post" action="#">
+          <fieldset>
+            <legend>Do you need more gear?</legend>
+            <ul class="poll__options">
+              <li>
+                <input type="radio" id="answer1" name="poll" />
+                <label for="answer1">No, I have enough gear</label>
+              </li>
+              <li>
+                <input type="radio" id="answer2" name="poll" />
+                <label for="answer2">Yes, I need new gar</label>
+              </li>
+              <li>
+                <input type="radio" id="answer4" name="poll" />
+                <label for="answer4">I'm not sure</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="button">Submit</button>
+        </form>
+      </section>
+
+    </main>
+    <aside class="aside" role="complementary">
+      <blockquote class="pullquote">
+        <div class="pullquote__content">
+          NewGear are the greatest company we have ever worked with!
+          We'd recommend them to anyone...
+        </div>
+      </blockquote>
+    </aside>
+  </div>
+  <footer class="footer" role="contentinfo">
+    <ul class="footer__list">
+      <li class="footer__list-item"><a href="#">Site map</a></li>
+      <li class="footer__list-item"><a href="#">Accessibility</a></li>
+      <li class="footer__list-item"><a href="#">Legal</a></li>
+      <li class="footer__list-item">&copy; NewGear 2012</li>
+    </ul>
+  </footer>
+</div>
+</body>
+</html>

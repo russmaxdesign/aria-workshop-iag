@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Exercise 1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../assets/css/normalize.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Exercise 1</h1>
+    <p><a href="#">link above content</a></p>
+
+    <h2>Native checkbox</h2>
+    <form action="#">
+      <div>
+        <input type="checkbox" id="e1" checked>
+        <label for="e1">Apples</label>
+      </div>
+      <div>
+        <input type="checkbox" id="e2">
+        <label for="e2">Bananas</label>
+      </div>
+    </form>
+
+    <h2>Fake checkbox</h2>
+    <div class="checkbox-container">
+      <div tabindex="0" role="checkbox" aria-checked="true" class="checkbox checked">Apples</div>
+      <div tabindex="0" role="checkbox" class="checkbox">Bananas</div>
+    </div>
+
+    <p><a href="#">link below content</a></p>
+  </div>
+
+<script>
+  var toggleClass = function(x) {
+    var cl = x.classList,
+        chk = "checked"
+    if (cl.contains(chk)) {
+      cl.remove(chk);
+    } else {
+      cl.add(chk);
+    }
+  }
+  Array.prototype.slice.call(document.querySelectorAll(".checkbox")).map(function(x) {
+    x.addEventListener("click", function() { toggleClass(x) });
+  });
+</script>
+</body>
+</html>

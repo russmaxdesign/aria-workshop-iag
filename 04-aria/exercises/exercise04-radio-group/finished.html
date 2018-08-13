@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Exercise 4</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../assets/css/normalize.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Exercise 4</h1>
+    <p><a href="#">link above content</a></p>
+
+    <h2>Fieldset</h2>
+    <fieldset>
+      <legend>Do you like apples?</legend>
+      <ul class="poll__options">
+        <li>
+          <input type="radio" id="apples-y" name="apples">
+          <label for="apples-y">Yes</label>
+        </li>
+        <li>
+          <input type="radio" id="apples-n" name="apples">
+          <label for="apples-n">No</label> 
+        </li>
+      </ul>
+    </fieldset>
+
+    <h2>Radiogroup</h2>
+    <div role="radiogroup" aria-labelledby="subscription">
+      <h3 id="subscription">
+        Pick a subscription
+      </h3>
+      <div>
+        <input type="radio" id="daily" name="subscribe">
+        <label for="daily">Daily</label>
+      </div>
+      <div>
+        <input type="radio" id="weekly" name="subscribe">
+        <label for="weekly">Weekly</label>
+      </div>
+    </div>
+
+    <p><a href="#">link below content</a></p>
+  </div>
+</body>
+</html>

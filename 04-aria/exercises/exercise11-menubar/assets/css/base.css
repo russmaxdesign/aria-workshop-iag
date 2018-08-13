@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  padding: 20px;
+  color: black;
+  background: white;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1;
+}
+
+h1 {
+  margin: 0 0 1em;
+  font-size: 1.8em;
+  line-height: 1.1;
+}
+
+p {
+  margin: 0 0 1.5em;
+  line-height: 1.5;
+}

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Exercise 9</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../assets/css/normalize.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Exercise 9</h1>
+    <p><a href="#">link above content</a></p>
+
+    <h2>Disabled / Invalid</h2>
+    <form action="#">
+      <div class="form-container">
+        <label class="label" for="name">Name</label>
+        <input class="input" id="name" type="text">
+      </div>
+      <div class="form-container">
+        <label class="label" for="email">Email</label>
+        <input class="input input__disabled" id="email" type="text" disabled aria-disabled="true">
+      </div>
+      <div class="form-container">
+        <label class="label" for="address">Address</label>
+        <input class="input input__invalid" id="address" type="text" invalid aria-invalid="true">
+      </div>
+    </form>
+
+    <h2>Hidden</h2>
+    <p aria-hidden="true">This content is hidden from Screen Readers but visible on-screen.</p>
+    <p hidden>This content is hidden from all forms of presentation.</p>
+
+    <p><a href="#">link below content</a></p>
+  </div>
+</body>
+</html>
